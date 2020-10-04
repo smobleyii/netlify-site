@@ -39,3 +39,6 @@ jobs:
           root: ./
           paths:
             - _site
+      - run:
+          name: Deploy
+          command: curl -X POST -d {} ${hook}
